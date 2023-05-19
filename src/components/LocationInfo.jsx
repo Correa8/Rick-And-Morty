@@ -3,25 +3,25 @@ import './styles/locationInfo.css';
 
 const LocationInfo = ({ location }) => {
   return (
-    <div>
-      <section>
-        <h2>{location?.name}</h2>
+    <section className="location">
+      <div className="location-container">
+        <h2 className="location-name">{location?.name}</h2>
         <ul className="location-list">
-          <li className="location-li">
-            <span>Type :</span>
+          <li className="location-item">
+            <span className="location-label">Type :</span>
             {location?.type}
           </li>
-          <li className="location-li">
-            <span>Dimension :</span>
+          <li className="location-item">
+            <span className="location-label">Dimension :</span>
             {location?.dimension}
           </li>
-          <li className="location-li">
-            <span>Population :</span>
+          <li className="location-item">
+            <span className="location-label">Population :</span>
             {location?.residents.length}
           </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

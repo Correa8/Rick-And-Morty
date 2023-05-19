@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.card {
+  border-radius: 0.8em;
+  background-color: rgba(13, 72, 82, 0.3);
+  border: solid 2px rgb(29, 130, 148);
+  box-shadow: 0px 0px 50px rgb(85, 207, 226);
+  overflow: hidden;
+  max-height: 600px;
+  max-width: 290px;
+  display: inline-block;
+  gap: 1.5rem;
+  margin-top: 20px;
+  margin-left: -15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  -webkit-border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -ms-border-radius: 0.8em;
+  -o-border-radius: 0.8em;
+  position: relative;
+}
+.card:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.header-card {
+  position: relative;
+  font-size: 30px;
+}
+.container-circle {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    position: absolute;
+    top: 0.2em;
+    width: 9em;
+    padding: 0.25em 0 0.25em 0.5em;
+    background-color: #062226c4;
+    border-radius: 0 0.25em 0.25em 0;
+    -webkit-border-radius: 0 0.25em 0.25em 0;
+    -moz-border-radius: 0 0.25em 0.25em 0;
+    -ms-border-radius: 0 0.25em 0.25em 0;
+    -o-border-radius: 0 0.25em 0.25em 0;
+}
+.container-circle .status{
+    font-size: 20px;
+
+    color: gainsboro;
+}
+.circle {
+    display: block;
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #096994;
+    box-shadow: 2px 2px 12px white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card-body {
+    padding: 1.5em 1.8em 2em;
+}
+.card-name {
+    margin-bottom: 0.4em;
+    background-color: rgba(2, 34, 63, 0.575);
+    border-radius: 30px;
+    color: wheat;
+    font-size: 17px;
+}
+.card-hr{
+    border: none;
+    border-top: 1.5px solid #aaa4;
+    margin-bottom: 0.5em;
+}
+.card-list {
+    display: grid;
+    gap: 0.45em;
+}
+.card-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: wheat;
+    
+}
+.card-label {
+    font-size: 1.03rem;
+    position: relative;
+    color: #aaaa;
+} 

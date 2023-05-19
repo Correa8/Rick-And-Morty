@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import './styles/residentInfo.css';
+import './styles/residentinfo.css';
 
 const Residentinfo = ({ url }) => {
   const [character, setCharacter] = useState();
@@ -18,12 +18,12 @@ const Residentinfo = ({ url }) => {
   }, []);
 
   return (
-    <section>
-      <header className="header card">
-        <img src={character?.image} alt="" />
-        <div>
-          <span></span>
-          <span>{character?.status}</span>
+    <section className="card">
+      <header className="header-card">
+        <img className="img-card" src={character?.image} alt="imageApi" />
+        <div className="container-circle">
+          <span className="circle"></span>
+          <span className="status">{character?.status}</span>
         </div>
       </header>
       <section className="card-body">
